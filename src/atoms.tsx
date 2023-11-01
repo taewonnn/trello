@@ -12,3 +12,16 @@ export const hoursSelector = selector({
     return minutes / 60
   },
 })
+
+export const hoursState = atom({
+  key: 'hours',
+  default: 0,
+})
+
+export const minuteSelector = selector({
+  key: 'minutes',
+  get: ({ get }) => {
+    const hours = get(hoursSelector)
+    return hours * 60
+  },
+})
