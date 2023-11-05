@@ -12,10 +12,10 @@ export default function App() {
           {() => (
             <ul>
               <Draggable draggableId="first" index={0}>
-                {() => <li>one</li>}
+                {() => <li>1</li>}
               </Draggable>
               <Draggable draggableId="second" index={1}>
-                {() => <li>two</li>}
+                {() => <li>2</li>}
               </Draggable>
             </ul>
           )}
