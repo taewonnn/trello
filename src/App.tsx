@@ -16,17 +16,15 @@ export default function App() {
                     {...magic.draggableProps}
                     {...magic.dragHandleProps}
                   >
+                    <span {...magic.dragHandleProps}>🔥</span>
                     One
                   </li>
                 )}
               </Draggable>
               <Draggable draggableId="second" index={1}>
                 {(magic) => (
-                  <li
-                    ref={magic.innerRef}
-                    {...magic.draggableProps}
-                    {...magic.dragHandleProps}
-                  >
+                  <li ref={magic.innerRef} {...magic.draggableProps}>
+                    <span {...magic.dragHandleProps}>🔥</span>
                     Two
                   </li>
                 )}
